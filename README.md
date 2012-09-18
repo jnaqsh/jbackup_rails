@@ -1,6 +1,6 @@
 # JbackupRails
 
-TODO: Write a gem description
+This lib help you backup database (currently is just mysql) and paperclip data files which store in public/system directory.
 
 ## Installation
 
@@ -18,7 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can backup database by this rake command:
+  * rake db:backup RAILS_ENV=production
+
+By defining environment, you can tell it which database you want.
+
+** Note: backups saved in $HOME/dbs directory.
 
 ## Contributing
 
